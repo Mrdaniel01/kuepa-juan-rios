@@ -14,16 +14,18 @@ export const SideMenu = () => {
   return (
     <div className="side-menu__container">
       <div className="side-menu__container--top">
-        <img className="side-menu__container--logo" src={logoKet} alt="kuepa home"/>
+        <Link to="/">
+          <img className="side-menu__container--logo" src={logoKet} alt="kuepa home"/>
+        </Link>
         <nav className="side-menu__container--nav">
           <Link to="home">
             <img src={homeLogo} alt="Home" />
           </Link>
           <Link to="panel">
-          <img src={panelLogoPhone} alt="Home" />
+          <img src={panelLogoPhone} alt="Panel" />
           </Link>
           <Link to="profile">
-          <img src={profileLogo} alt="Home" />
+          <img src={profileLogo} alt="Profile" />
           </Link>
         </nav>
       </div>

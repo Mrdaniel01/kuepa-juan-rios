@@ -1,9 +1,12 @@
 import React from 'react'
+import { SideClientCard } from './SideClientCard'
 
 export const SideClientsNotification = () => {
   return (
     <div className="side-clients__container">
-      Si
+      <SideClientCard />
+      <SideClientCard />
+      <SideClientCard />
     </div>
   )
 }
