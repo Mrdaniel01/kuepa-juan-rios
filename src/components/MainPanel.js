@@ -1,7 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useDispatch } from 'react-redux'
+import { clientsStartLoading } from '../actions/actions'
 import { SideClientsNotification } from './SideClientsNotification'
 
 export const MainPanel = () => {
+
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    console.log('hola')
+    dispatch(clientsStartLoading())
+
+  }, [dispatch])
+
   return (
     <article className="main-panel__container">
       <main className="main-panel__main">
