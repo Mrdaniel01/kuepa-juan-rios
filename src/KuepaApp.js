@@ -1,10 +1,14 @@
 import React from 'react';
-import './App.css';
+import { MainPanel } from './components/MainPanel';
+import { SideClientsNotification } from './components/SideClientsNotification';
+import { SideMenu } from './components/SideMenu';
 
 export function KuepaApp() {
   return (
-    <div >
-      <h1>Hola</h1>
+    <div className="Page__Home">
+      <SideMenu />
+      <MainPanel />
+      <SideClientsNotification />
     </div>
   );
 }

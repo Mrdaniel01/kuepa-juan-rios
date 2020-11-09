@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.scss';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 import {KuepaApp} from './KuepaApp';
+
+import './styles/index.scss';
 
 ReactDOM.render(
   <React.StrictMode>
