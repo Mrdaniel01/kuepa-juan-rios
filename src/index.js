@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './index.scss';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
+import {KuepaApp} from './KuepaApp';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <KuepaApp />
   </React.StrictMode>,
   document.getElementById('root')
 );
