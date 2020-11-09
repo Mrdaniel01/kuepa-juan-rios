@@ -1,4 +1,54 @@
-.Page__Home {
+.side-menu__container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  background-color: $main-color-dark;
+  color: white;
+  padding: 15px;
+}
+
+.side-menu__container--nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  a {
+    cursor: pointer;
+    padding: 10px;
+    transition: .5s;
+    img {
+      width: 20px;
+    }
+  }
+  a:hover {
+    background-color:$secondary-color;
+  }
+}
+
+.side-menu__container--bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  a {
+    transition: .5s;
+    padding: 10px;
+  }
+  a:hover {
+    background-color: $secondary-color;
+  }
+  a img {
+    width: 20px;
+  }
+
+  .side-menu__container--bottom-emp {
+    border-radius: 50%;
+    width: 30px;
+    margin-top: 15px;
+  }
+}
+
+.side-menu__container--logo {
+  width: 40px;
 }

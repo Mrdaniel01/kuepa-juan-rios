@@ -1,14 +1,9 @@
-import React from 'react';
-import { MainPanel } from './components/MainPanel';
-import { SideClientsNotification } from './components/SideClientsNotification';
-import { SideMenu } from './components/SideMenu';
+import React from 'react';import AppRoutes from './routes/AppRoutes';
 
 export function KuepaApp() {
   return (
-    <div className="Page__Home">
-      <SideMenu />
-      <MainPanel />
-      <SideClientsNotification />
+    <div className="page__home">
+      <AppRoutes />      
     </div>
   );
 }
