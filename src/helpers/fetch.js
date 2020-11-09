@@ -5,8 +5,6 @@ export const getClients = async () => {
   const url = `https://api.opendota.com/api/proPlayers`;
   const resp = await fetch(url);
   const clients = await resp.json();
-  console.log(resp.body)
-  console.log('fetch')
   return clients;
 };
 

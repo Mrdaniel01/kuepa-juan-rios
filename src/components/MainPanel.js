@@ -8,9 +8,7 @@ export const MainPanel = () => {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    console.log('hola')
     dispatch(clientsStartLoading())
-
   }, [dispatch])
 
   return (

@@ -1,15 +1,22 @@
 import { types } from "../types/types";
 
 const initialState = {
-  clients: []
+  clients: {
+    loading: true,
+    clientsArray:[]
+  }
 };
 
 export const clientReducer = (state = initialState, action) => {
   switch (action.type) {
-    case types.clientStartLoad:
+
+    case types.clientsLoaded:
       return {
         ...state,
-        clientStartLoad: true,
+        clients: {
+          loading: false,
+          clientsArray:[...action.payload]
+        }
       };
 
     default:

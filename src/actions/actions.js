@@ -9,16 +9,15 @@ export const clientsStartLoading = () => {
   return async (dispatch) => {
     try {
       const resp = await getClients();
-      const body = await resp.json();
-      console.log('hola')
-      dispatch(clientsLoaded(body));
+      const newArray = resp.slice(0, 100)
+      dispatch(clientssLoaded(newArray));
     } catch (error) {
       console.log(error);
     }
   };
 };
 
-const clientsLoaded = (clients) => ({
+const clientssLoaded = (clients) => ({
   type: types.clientsLoaded,
   payload: clients,
 });
