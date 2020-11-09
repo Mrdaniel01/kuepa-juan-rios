@@ -17,7 +17,7 @@ export default function AppRoutes() {
       <div className="container">
         <Switch>
 
-          <Route exact path="/profile">
+          <Route exact path="/profile/:account_id">
             <ProfileEmployee />
           </Route>
 
@@ -25,7 +25,7 @@ export default function AppRoutes() {
             <MainPanel />
           </Route>
 
-          <Route path="/">
+          <Route exact path="/">
             <Home />
           </Route>
         </Switch>

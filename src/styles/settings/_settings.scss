@@ -14,3 +14,16 @@ html, body, #root {
 body {
   background-color: #2B2D42;
 }
+
+::-webkit-scrollbar {
+  background-color:  #2B2D42;
+  width: 10px;
+  padding: 2px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #F16623;
+  opacity: 0;
+  border-radius: 5px ;
+  border: 3px solid  #2B2D42;
+}

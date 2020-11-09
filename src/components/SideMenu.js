@@ -18,13 +18,13 @@ export const SideMenu = () => {
           <img className="side-menu__container--logo" src={logoKet} alt="kuepa home"/>
         </Link>
         <nav className="side-menu__container--nav">
-          <Link to="home">
+          <Link to="/">
             <img src={homeLogo} alt="Home" />
           </Link>
-          <Link to="panel">
+          <Link to="/panel">
           <img src={panelLogoPhone} alt="Panel" />
           </Link>
-          <Link to="profile">
+          <Link to="/profile">
           <img src={profileLogo} alt="Profile" />
           </Link>
         </nav>
