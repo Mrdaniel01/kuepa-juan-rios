@@ -73,3 +73,53 @@
     border:1px solid rgba(0, 0, 0, 0.158);
   }
 }
+
+//Plan Panel
+
+.plan-panel__card {
+  display: flex;
+}
+
+.plan-panel__card--total {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(-360deg, rgba(173,132,238,1) 0%, rgba(134,183,252,1) 100%);
+  padding: 5px;
+  margin: 5px;
+  border-radius: 15px;
+}
+
+.plan-panel__card--total::after {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: "30";
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: white;
+  font-size: 1.5rem;
+  color:  blueviolet;
+}
+
+.plan-panel__card--details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  div {
+    max-width: 40px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  span {
+    margin-right: 3px;
+  }
+}

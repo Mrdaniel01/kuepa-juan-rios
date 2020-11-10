@@ -44,6 +44,8 @@ export const MainPanel = () => {
         </section>
         <section>
           <PlanPanel />
+          <PlanPanel />
+          <PlanPanel />
         </section>
       </div>
 

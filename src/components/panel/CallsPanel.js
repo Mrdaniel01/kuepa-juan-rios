@@ -37,8 +37,6 @@ export const CallsPanel = () => {
           </p>
         </div>
       </section>
-
-
     </>
   )
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
 
 export const AgendaPanel = () => {
 
@@ -17,7 +18,9 @@ export const AgendaPanel = () => {
                   <td>{row.name}</td>
                   <td>{row.team_name}</td>
                   <td>
-                    <img src={row.avatar} alt={row.name} />
+                    <Link to={`profile/${row.account_id}`}>
+                      <img src={row.avatar} alt={row.name} />
+                    </Link>
                   </td>
                 </tr>
               )
