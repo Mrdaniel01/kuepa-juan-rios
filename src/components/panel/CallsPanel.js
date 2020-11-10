@@ -3,38 +3,26 @@ import React from 'react'
 export const CallsPanel = () => {
   return (
     <>
-      <section className='inline-block'  >
-        Barra
-      </section>
-
-      <section className='inline-block'>
-        <div>
-          <p>
-            Leads
-            Obtenidos
-          </p>
-          <p>
-            50/100
-          </p>
+      <div className='call-panel__indicator--container'  >
+        <div className='call-panel__indicator'>
+          50%
         </div>
-        <div>
-          <p>
-            Matriculas Finalizadas
-          </p>
-          <p>
-            50/100
-          </p>
-        </div>
-      </section>
+      </div>
 
-      <section className='inline-block'>
-      <div>
-          <p>
-            Cola de llamados
-          </p>
-          <p>
-            50/100
-          </p>
+      <section className='inline-block calls-panel__goals'>
+        <div>
+          <small> Leads Obtenidos </small>
+          <p> 50/100 </p>
+        </div>
+
+        <div>
+          <small> Matriculas Finalizadas </small>
+          <p> 50/100 </p>
+        </div>
+
+        <div>
+          <small> Cola de llamados </small>
+          <p> 50/100 </p>
         </div>
       </section>
     </>

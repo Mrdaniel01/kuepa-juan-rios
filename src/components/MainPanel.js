@@ -42,7 +42,7 @@ export const MainPanel = () => {
         <section className="agenda-panel--container">
           <AgendaPanel />
         </section>
-        <section>
+        <section className="agenda-panel--planer">
           <PlanPanel />
           <PlanPanel />
           <PlanPanel />

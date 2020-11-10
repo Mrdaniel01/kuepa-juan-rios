@@ -1,25 +1,27 @@
 .main-panel__container {
   position: relative;
-  height: 100%;
+  height: auto;
   width: 100%;
 }
 
 .main-panel__main {
   margin-right: 120px;
-}
-
-
-
-.main-panel__header {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  height: auto;
+  max-width: 1000px;
+  place-self: center;
 }
 
 @media (max-width: 600px) {
   .main-panel__main {
     margin-right: 10px;
+    padding-bottom: 100px;
   }
+}
+
+.main-panel__header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .main-panel__header--input {
@@ -47,10 +49,14 @@
   justify-content: space-between;
 
   section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     background-color: white;
     padding: 20px;
     border-radius: 20px;
-    margin: 20px 20px 0 0;
+    margin: 10px;
   }
 }
 
@@ -75,6 +81,13 @@
 }
 
 //Plan Panel
+
+.agenda-panel--planer {
+  max-width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+}
 
 .plan-panel__card {
   display: flex;
@@ -121,5 +134,45 @@
   }
   span {
     margin-right: 3px;
+  }
+  small {
+    font-weight: 600;
+  }
+}
+
+//CallsPanel
+
+.calls-panel__goals {
+  div {
+    margin: 10px;
+    small {
+      font-weight: bold;
+    }
+  }
+}
+
+.call-panel__indicator--container {
+  display: inline-block;
+}
+
+.call-panel__indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  border: 7px solid #eee;
+  border-top: 7px solid #FF967D;
+  border-left: 7px solid #FF967D;
+  border-radius: 50%;
+}
+
+//GoalTeam
+
+.goal-team__label {
+  display: flex;
+  justify-content: space-between;
+  small {
+    font-weight: 600;
   }
 }

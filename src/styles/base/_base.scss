@@ -15,10 +15,11 @@ $secondary-color: #F16623;
 }
 
 .container {
+  position: absolute;
   background-color: $main-color-clear;
   border-radius: 30px 0 0 30px;
   height: auto;
-  //min-height: 100%;
+  min-height: 100%;
   width: calc(100% - 60px) ;
   padding: 50px;
   padding-right: 0;
@@ -27,4 +28,8 @@ $secondary-color: #F16623;
 
 .capitalize {
   text-transform: capitalize;
+}
+
+progress {
+  width: 100%;
 }

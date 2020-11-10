@@ -5,16 +5,18 @@ export const GoalTeamPanel = () => {
     <div>
       <h3>Meta grupal</h3>
 
-      <div>
-        Leads Obtenidos
-        200/400
+      <div className="goal-team__label">
+        <small> Leads Obtenidos</small>
+        <p>200/400</p>
       </div>
       <progress min='0' max='400' value='200'></progress>
-      <div>
-        Matriculas realizadas
-        50/100
+
+      <div className="goal-team__label">
+        <small> Matriculas realizadas </small>
+        <p>50/100</p>
       </div>
       <progress min='0' max='400' value='200'></progress>
+
     </div>
   )
 }

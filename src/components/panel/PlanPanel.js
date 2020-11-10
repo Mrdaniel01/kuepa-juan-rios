@@ -7,7 +7,7 @@ export const PlanPanel = () => {
         30
       </span>
       <span className="plan-panel__card--details">
-        <h5 className="inline-block">Leads de Contacto</h5>
+        <small className="inline-block">Leads de Contacto</small>
         <div className="flex">
           <span>&#x2706;</span>
           <p>15</p>
