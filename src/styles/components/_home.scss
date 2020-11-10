@@ -26,3 +26,14 @@
   justify-content: space-evenly;
   font-size: 1.5rem;
 }
+
+.home__message{
+  margin-top: 20px;
+  color: lighten($color: $main-color-dark, $amount: 40);
+}
+
+.home__message a {
+  text-decoration: none;
+  font-weight: 600;
+  color: $main-color-dark;
+}

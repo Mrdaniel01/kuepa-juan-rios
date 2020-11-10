@@ -38,6 +38,11 @@ const clientDetailLoaded = (clientSelected) => ({
   type: types.clientDetailLoaded,
   payload: {
     ...clientSelected,
-  },
+  }
+});
+
+export const userNameSaved = (name) => ({
+  type: types.userNameSaved,
+  payload: {'name': name}
 });
 

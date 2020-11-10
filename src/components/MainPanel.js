@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { clientsStartLoading } from '../actions/actions'
 import { SideClientsNotification } from './SideClientsNotification'
 
 export const MainPanel = () => {
 
+  const {name} = useSelector(state => state.user)
   const dispatch = useDispatch()
 
   useEffect(() => {
@@ -20,9 +21,10 @@ export const MainPanel = () => {
         </label>
         <input id="search" type="search" className="main-panel__header--input" placeholder="Busca..." />
       </header>
-      <h1 className="main-panel__title">
-        ¡Hola, Jorge!
-      </h1>
+      {
+        (name) ? <h1 className="main-panel__title">¡Hola, {name}!</h1>
+          : <h1 className="main-panel__title">¡Hola!</h1>
+      }
 
       <div className="main-panel__top">
         <section>
