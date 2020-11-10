@@ -1,20 +1,20 @@
 .side-menu__container {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  height: 100%;
   background-color: $main-color-dark;
   color: white;
-  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
   max-width: 60px;
+  position: fixed;
+  padding: 15px;
 }
 
 .side-menu__container--nav {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   a {
     cursor: pointer;
     padding: 10px;
@@ -29,13 +29,13 @@
 }
 
 .side-menu__container--bottom {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
   a {
-    transition: .5s;
     padding: 10px;
+    transition: .5s;
   }
   a:hover {
     background-color: $secondary-color;
@@ -46,14 +46,14 @@
 
   .side-menu__container--bottom-emp {
     border-radius: 50%;
-    width: 30px;
     margin-top: 15px;
+    width: 30px;
   }
 }
 
 .side-menu__container--logo {
-  width: 40px;
   transition: .5s;
+  width: 40px;
   &:hover {
     transform: scale(1.1);
   }

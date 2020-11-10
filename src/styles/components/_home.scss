@@ -3,12 +3,12 @@
 }
 
 .home__input-name {
-  padding: 3px 10px;
-  outline: none;
   border: none;
   border-radius: 3px;
-  margin-left: 15px;
   height: 40px;
+  margin-left: 15px;
+  outline: none;
+  padding: 3px 10px;
   width: 250px;
   &:focus {
     box-shadow: 0 0 5px 3px rgba(21, 14, 39, 0.05);
@@ -20,23 +20,23 @@
 }
 
 .home__input--container {
-  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
   font-size: 1.5rem;
+  justify-content: space-evenly;
+  margin-top: 50px;
   label {
     text-align: center;
   }
 }
 
 .home__message{
-  margin-top: 20px;
   color: lighten($color: $main-color-dark, $amount: 40);
+  margin-top: 20px;
 }
 
 .home__message a {
-  text-decoration: none;
-  font-weight: 600;
   color: $main-color-dark;
+  font-weight: 600;
+  text-decoration: none;
 }

@@ -15,15 +15,15 @@ $secondary-color: #F16623;
 }
 
 .container {
-  position: absolute;
   background-color: $main-color-clear;
   border-radius: 30px 0 0 30px;
   height: auto;
   min-height: 100%;
-  width: calc(100% - 60px) ;
+  margin-left: 60px;
   padding: 50px;
   padding-right: 0;
-  margin-left: 60px;
+  position: absolute;
+  width: calc(100% - 60px) ;
 }
 
 .capitalize {
@@ -41,12 +41,12 @@ progress[value] {
 
 progress[value]::-webkit-progress-bar {
   background-color: #eee;
-  height: 8px;
   border-radius: 5px;
+  height: 8px;
 }
 
 progress[value]::-webkit-progress-value {
   background-color: #FF967D;
-  height: 8px;
   border-radius: 4px;
+  height: 8px;
 }

@@ -1,12 +1,12 @@
 .main-panel__container {
-  position: relative;
   height: auto;
+  position: relative;
   width: 100%;
 }
 
 .main-panel__main {
-  margin-right: 120px;
   height: auto;
+  margin-right: 120px;
   max-width: 1000px;
   place-self: center;
 }
@@ -20,15 +20,15 @@
 
 .main-panel__header {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .main-panel__header--input {
-  padding: 3px 10px;
-  outline: none;
   border: none;
   border-radius: 3px;
+  outline: none;
+  padding: 3px 10px;
   &:focus {
     box-shadow: 0 0 5px 3px rgba(21, 14, 39, 0.05);
   }
@@ -49,14 +49,14 @@
   justify-content: space-between;
 
   section {
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
-    background-color: white;
-    padding: 20px;
-    border-radius: 20px;
     margin: 10px;
+    padding: 20px;
   }
 }
 
@@ -68,24 +68,24 @@
 //AgendaPanel
 .agenda__table--table {
   border-collapse: collapse;
+  font-size: .6rem;
   margin: 10px auto;
   width: 100%;
-  font-size: .6rem;
 }
 
 .agenda__table--columns {
   td {
-    padding: 5px 12px;
     border:1px solid rgba(0, 0, 0, 0.158);
+    padding: 5px 12px;
   }
 }
 
 //Plan Panel
 
 .agenda-panel--planer {
-  max-width: 300px;
   display: flex;
   flex-wrap: wrap;
+  max-width: 300px;
   text-align: left;
 }
 
@@ -94,33 +94,33 @@
 }
 
 .plan-panel__card--total {
-  position: relative;
-  display: flex;
   align-items: center;
-  justify-content: center;
-  width: 80px;
-  height: 80px;
   background: linear-gradient(-360deg, rgba(173,132,238,1) 0%, rgba(134,183,252,1) 100%);
-  padding: 5px;
-  margin: 5px;
   border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  margin: 5px;
+  padding: 5px;
+  position: relative;
+  width: 80px;
 }
 
 .plan-panel__card--total::after {
-  position: absolute;
-  display: flex;
   align-items: center;
-  justify-content: center;
-  content: "30";
-  top: 10px;
-  left: 10px;
-  z-index: 10;
-  width: 60px;
-  height: 60px;
   border-radius: 50%;
   background-color: white;
-  font-size: 1.5rem;
   color:  blueviolet;
+  content: "30";
+  display: flex;
+  font-size: 1.5rem;
+  height: 60px;
+  justify-content: center;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 60px;
+  z-index: 10;
 }
 
 .plan-panel__card--details {
@@ -128,9 +128,9 @@
   flex-direction: column;
   justify-content: center;
   div {
-    max-width: 40px;
     align-items: center;
     justify-content: space-between;
+    max-width: 40px;
   }
   span {
     margin-right: 3px;
@@ -156,15 +156,15 @@
 }
 
 .call-panel__indicator {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  width: 90px;
-  height: 90px;
   border: 7px solid #eee;
   border-top: 7px solid #FF967D;
   border-left: 7px solid #FF967D;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  height: 90px;
+  width: 90px;
 }
 
 //GoalTeam
