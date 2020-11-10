@@ -4,13 +4,20 @@
   width: 100%;
 }
 
-.main-panel__main {
+.panel__mainmain- {
   margin-right: 120px;
+}
+
+@media (max-width: 600px) {
+  .panel__mainmain- {
+    margin-right: 10px;
+  }
 }
 
 .main-panel__header {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .main-panel__header--input {
@@ -27,6 +34,9 @@
   font-size: 2rem;
   font-weight: 600;
   margin-top: 50px;
+  span {
+    font-weight: 600;
+  }
 }
 
 .main-panel__top, .main-panel__bottom {
@@ -39,5 +49,25 @@
     padding: 20px;
     border-radius: 20px;
     margin: 20px 20px 0 0;
+  }
+}
+
+.agenda-panel--container {
+  height: 300px;
+  overflow-y: scroll;
+}
+
+//AgendaPanel
+.agenda__table--table {
+  border-collapse: collapse;
+  margin: 10px auto;
+  width: 100%;
+  font-size: .6rem;
+}
+
+.agenda__table--columns {
+  td {
+    padding: 5px 12px;
+    border:1px solid rgba(0, 0, 0, 0.158);
   }
 }

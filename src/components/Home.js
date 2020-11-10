@@ -5,23 +5,19 @@ import { userNameSaved } from '../actions/actions'
 import { Link } from 'react-router-dom'
 
 export const Home = () => {
-  
   const {name: employee} = useSelector(state => state.user)
   const dispatch = useDispatch()
 
-const [userName, setUserName] = useForm({
-  name:''
-})
-const { name } = userName;
+  const [userName, setUserName] = useForm({
+    name:''
+  })
+  const { name } = userName;
 
-const handleSubmit = (e) => {
-  e.preventDefault()
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    dispatch(userNameSaved(name))
+  }
 
-  dispatch(userNameSaved(name))
-}
-
-
-console.log(name)
   return (
     <div className="home__container animate__animated animate__fadeIn" >
 
@@ -46,7 +42,7 @@ console.log(name)
       {
         (employee !== '') && 
         <h4 className='home__message text-center'>
-          Gracias, {employee}. Ya puedes ingresar a tu 
+          Gracias, <span className="capitalize">{employee}</span>. Ya puedes ingresar a tu 
           <Link to='/panel'> panel</Link>
         </h4 >
       }

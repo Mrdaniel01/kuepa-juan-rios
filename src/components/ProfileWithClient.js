@@ -12,7 +12,6 @@ export const ProfileWithClient = () => {
 
   const { clientDetail } = useSelector(state => state.client)
   const { loading, clientData } = clientDetail;
-  console.log(loading)
 
   return (
     <>

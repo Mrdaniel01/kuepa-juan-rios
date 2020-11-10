@@ -26,7 +26,6 @@ export const clientStartLoadingById = (id) => {
   return async (dispatch) => {
     try {
       const resp = await getClientById(id);
-      console.log(resp)
       dispatch(clientDetailLoaded(resp));
     } catch (error) {
       console.log(error);
