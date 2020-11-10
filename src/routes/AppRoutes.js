@@ -7,7 +7,7 @@ import {
 
 import { Home } from "../components/Home";
 import { MainPanel } from "../components/MainPanel";
-import { ProfileEmployee } from "../components/ProfileEmployee";
+import { Profile } from "../components/Profile";
 import { SideMenu } from "../components/SideMenu";
 
 export default function AppRoutes() {
@@ -17,8 +17,8 @@ export default function AppRoutes() {
       <div className="container">
         <Switch>
 
-          <Route exact path="/profile/:account_id">
-            <ProfileEmployee />
+          <Route exact path="/profile/:account_id?">
+            <Profile />
           </Route>
 
           <Route exact path="/panel">

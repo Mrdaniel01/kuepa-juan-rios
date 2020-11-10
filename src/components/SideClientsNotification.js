@@ -6,7 +6,6 @@ export const SideClientsNotification = () => {
 
   const { clients } = useSelector(state => state.client)
   const { loading, clientsArray} = clients;
-  console.log(clientsArray)
   return (
     <div className="side-clients__container">
       {

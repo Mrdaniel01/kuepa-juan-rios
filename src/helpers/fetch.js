@@ -1,5 +1,4 @@
-const baseUrl = process.env.REACT_APP_API_URL;
-
+//const baseUrl = process.env.REACT_APP_API_URL;
 
 export const getClients = async () => {
   const url = `https://api.opendota.com/api/proPlayers`;
@@ -9,7 +8,7 @@ export const getClients = async () => {
 };
 
 export const getClientById = async (id) => {
-  const url = `${baseUrl}/player/${id}`;
+  const url = `https://api.opendota.com/api/players/${id}`;
   const resp = await fetch(url);
   const client = await resp.json();
   return client;

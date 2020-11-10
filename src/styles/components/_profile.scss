@@ -1,0 +1,18 @@
+.profile__container--header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.profile__title {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-left: 50px;
+}
+
+.profile__photo {
+  border: 3px solid white;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+}

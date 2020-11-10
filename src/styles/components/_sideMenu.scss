@@ -51,4 +51,8 @@
 
 .side-menu__container--logo {
   width: 40px;
+  transition: .5s;
+  &:hover {
+    transform: scale(1.1);
+  }
 }

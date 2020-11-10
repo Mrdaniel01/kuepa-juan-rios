@@ -22,23 +22,22 @@ const clientssLoaded = (clients) => ({
   payload: clients,
 });
 
-export const clientStartLoadindById = (id) => {
+export const clientStartLoadingById = (id) => {
   return async (dispatch) => {
     try {
       const resp = await getClientById(id);
-      //TODO: revisar respuesta de API
-      dispatch(newDetailLoaded(resp.yourNew));
+      console.log(resp)
+      dispatch(clientDetailLoaded(resp));
     } catch (error) {
       console.log(error);
     }
   };
 };
 
-const newDetailLoaded = (newSelected) => ({
+const clientDetailLoaded = (clientSelected) => ({
   type: types.clientDetailLoaded,
   payload: {
-    loading: false,
-    ...newSelected,
+    ...clientSelected,
   },
 });
 
