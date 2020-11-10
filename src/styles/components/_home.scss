@@ -1,0 +1,28 @@
+.home__container {
+  padding-right: 50px;
+}
+
+.home__input-name {
+  padding: 3px 10px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  margin-left: 15px;
+  height: 40px;
+  width: 250px;
+  &:focus {
+    box-shadow: 0 0 5px 3px rgba(21, 14, 39, 0.05);
+  }
+}
+
+.home__subtitle {
+  color: lighten($color: $main-color-dark, $amount: 40);
+}
+
+.home__input--container {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+}

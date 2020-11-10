@@ -2,6 +2,10 @@ $main-color-dark: #2B2D42;
 $main-color-clear: #F4F8FB;
 $secondary-color: #F16623;
 
+.text-center {
+  text-align: center;
+}
+
 .container {
   background-color: $main-color-clear;
   border-radius: 30px 0 0 30px;
