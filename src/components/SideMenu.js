@@ -14,9 +14,13 @@ export const SideMenu = () => {
   return (
     <div className="side-menu__container">
       <div className="side-menu__container--top">
-        <Link to="/">
+        <a 
+          href="http://www.kuepa.com/co"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img className="side-menu__container--logo" src={logoKet} alt="kuepa home"/>
-        </Link>
+        </a>
         <nav className="side-menu__container--nav">
           <Link to="/">
             <img src={homeLogo} alt="Home" />

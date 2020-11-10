@@ -43,6 +43,7 @@ export const MainPanel = () => {
           <AgendaPanel />
         </section>
         <section className="agenda-panel--planer">
+        <h3>Tu plan de hoy</h3>
           <PlanPanel />
           <PlanPanel />
           <PlanPanel />
