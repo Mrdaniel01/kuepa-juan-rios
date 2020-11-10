@@ -4,20 +4,22 @@
   width: 100%;
 }
 
-.panel__mainmain- {
+.main-panel__main {
   margin-right: 120px;
 }
 
-@media (max-width: 600px) {
-  .panel__mainmain- {
-    margin-right: 10px;
-  }
-}
+
 
 .main-panel__header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .main-panel__main {
+    margin-right: 10px;
+  }
 }
 
 .main-panel__header--input {
