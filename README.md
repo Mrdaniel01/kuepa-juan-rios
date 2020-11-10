@@ -16,9 +16,7 @@ Run: npm run start command to star the project, It will open a new window in you
 
 Run: npm run start-watch if the page does not reload when saving changes,
 
-## Running the tests ⚙️
 
-Run: npm run test
 
 ## Deploy 📦
 
@@ -28,7 +26,6 @@ Run: npm run test
 
 * [React]
 * [Sass]
-* [Jest]
 
 ## Team Frontend ✒️
 
