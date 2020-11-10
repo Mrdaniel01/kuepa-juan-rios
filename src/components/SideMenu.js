@@ -30,8 +30,8 @@ export const SideMenu = () => {
         </nav>
       </div>
       <div className="side-menu__container--bottom">
-        <Link to="profile">
-          <img src={messageLogo} alt="Home" />
+        <Link to="/mail">
+          <img src={messageLogo} alt="Mail" />
         </Link>
         <img className="side-menu__container--bottom-emp" src={employPhoto} alt="profile" />
 

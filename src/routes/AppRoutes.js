@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 
 import { Home } from "../components/Home";
+import { MailEmployee } from "../components/MailEmployee";
 import { MainPanel } from "../components/MainPanel";
 import { Profile } from "../components/Profile";
 import { SideMenu } from "../components/SideMenu";
@@ -23,6 +24,10 @@ export default function AppRoutes() {
 
           <Route exact path="/panel">
             <MainPanel />
+          </Route>
+
+          <Route exact path="/mail">
+            <MailEmployee />
           </Route>
 
           <Route exact path="/">

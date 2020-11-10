@@ -1,34 +1,19 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useParams } from "react-router-dom"
-import { useDispatch, useSelector  } from 'react-redux'
-import { clientStartLoadingById } from '../actions/actions'
+import { ProfileWithClient } from './ProfileWithClient'
+import { MessageProfile } from './MessageProfile'
 
 export const Profile = () => {
 
-  const { clientDetail } = useSelector(state => state.client)
-  const { loading, clientData } = clientDetail
-
-  const dispatch = useDispatch()
-
   const { account_id } = useParams();
 
-  useEffect(() => {
-    dispatch(clientStartLoadingById(account_id))
-  }, [dispatch, account_id])
-
   return (
-    <>
+    <section className="animate__animated animate__fadeIn">
     {
-      (!account_id) ? <p>hola</p> :
+      (!account_id) ? <MessageProfile /> :
 
-      (loading) ? <p>Loading...</p> :
-      <div className="profile__container">
-        <header className="profile__container--header">
-          <img className="profile__photo" src={clientData.profile.avatarfull} alt={clientData.profile.name} />
-          <h1 className="profile__title">{clientData.profile.name}</h1>
-        </header>
-      </div>
+      <ProfileWithClient />
     }
-    </>
+    </section>
   )
 }

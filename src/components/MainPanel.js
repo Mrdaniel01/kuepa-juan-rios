@@ -12,14 +12,14 @@ export const MainPanel = () => {
   }, [dispatch])
 
   return (
-    <article className="main-panel__container">
+    <article className="main-panel__container animate__animated animate__fadeIn">
       <main className="main-panel__main">
       <header className="main-panel__header">
         <input type="search" className="main-panel__header--input" placeholder="Search..." />
         <p>Wed, 20 May</p>
       </header>
       <h1 className="main-panel__title">
-        Hola, Jorge
+        ¡Hola, Jorge!
       </h1>
 
       <div className="main-panel__top">
